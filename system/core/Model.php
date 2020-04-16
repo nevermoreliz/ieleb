@@ -73,4 +73,52 @@ class CI_Model {
 		return get_instance()->$key;
 	}
 
+
+	// Crud Tables db_ieleb
+
+	public function findAll()
+	{
+		$this->db->select();
+		$this->db->from($this->table);
+		$query = $this->db->get();
+		// result es para capturar en un json varios datos
+		return $query->result();
+	}
+
+	public function find($id)
+	{
+		$this->db->select();
+		$this->db->from($this->table);
+		$this->db->where($this->table_id,$id);
+		$query=$this->db->get();
+		// row es para capturar los datos pero de un solo registro
+		return $query->row();
+	}
+
+	public function update($id,$data)
+	{
+		$this->db->where($this->table_id,$id);
+		// $data aqui esta los datos del formulario
+		$this->db->update($this->table,$data);
+	}
+
+	public function delete($id)
+	{
+		$this->db->where($this->table_id,$id);
+		$this->db->delete($this->table);
+	}
+
+	public function insert($data)
+	{
+		$this->db->insert($this->table,$data);
+		// este return retorna un id cuando esta en autoincrement
+		return $this->db->insert_id();
+	}
+
+	public function count()
+	{
+		$count= $this->db->query("SELECT $this->table_id FROM $this->table");
+		return $count->num_rows();
+	}
+
 }
