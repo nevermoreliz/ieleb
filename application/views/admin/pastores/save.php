@@ -1,40 +1,42 @@
-<div class="panel">
-    <!-- Panel heading -->
-    <div class="panel-heading">
-        <h3 class="panel-title">Number Validator</h3>
+<div class="card card-body">
+    <div class="card card-primary">
+  <div class="card-header">
+    <h3 class="card-title">Quick Example</h3>
+  </div>
+  <!-- /.card-header -->
+  <!-- form start -->
+  <form role="form">
+    <div class="card-body">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputFile">File input</label>
+        <div class="input-group">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="exampleInputFile">
+            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+          </div>
+          <div class="input-group-append">
+            <span class="input-group-text" id="">Upload</span>
+          </div>
+        </div>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
     </div>
-    <form id="demo-bvd-notempty" action="#" class="form-horizontal">
-        <div class="panel-body">
-            <!--REGULAR EXPRESSION BASED VALIDATORS-->
-            <!--===================================================-->
-            <fieldset>
-                <div class="form-group">
-                    <label class="col-lg-3 control-label">Email address</label>
-                    <div class="col-lg-7">
-                        <input type="email" class="form-control" name="email" placeholder="email">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-lg-3 control-label">Website</label>
-                    <div class="col-lg-7">
-                        <input type="text" class="form-control" name="website" placeholder="http://" />
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-lg-3 control-label">Hex color</label>
-                    <div class="col-lg-5">
-                        <input type="text" class="form-control" name="color" placeholder="#fff">
-                    </div>
-                </div>
-            </fieldset>
-            <!--===================================================-->
-        </div>
-        <div class="panel-footer">
-            <div class="row">
-                <div class="col-sm-7 col-sm-offset-3">
-                    <button class="btn btn-info btn-lg" type="submit">Submit</button>
-                </div>
-            </div>
-        </div>
-    </form>
+    <!-- /.card-body -->
+
+    <div class="card-footer">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>
 </div>

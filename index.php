@@ -36,6 +36,11 @@
  * @filesource
  */
 
+ define('APP_VERSION',"1");
+ define('APP_NAME',"IELEB");
+ define('PROJECT_FOLDER',"project01");
+ define('APP_DESCRIPTION',"Una organización Evangelica para hacercarte a DIOS");
+
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
