@@ -26,6 +26,9 @@
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/plugins/summernote/summernote-bs4.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <!-- css personalizados -->
+
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -112,5 +115,14 @@
 <script src="<?php echo base_url(); ?>assets/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url(); ?>assets/dist/js/demo.js"></script>
+<!-- jquery-validation --><!-- jquery-validation -->
+<script src="<?php echo base_url(); ?>assets/plugins/jquery-validation/jquery.validate.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/plugins/jquery-validation/additional-methods.min.js"></script>
+
+<!-- js personalizados -->
+<!-- validacion form-iglesia_save -->
+<script src="<?php echo base_url(); ?>assets/js/admin/iglesias/save.js"></script>
+<!-- validacion form-post -->
+<script src="<?php echo base_url(); ?>assets/js/admin/pastores/save.js"></script>
 </body>
 </html>

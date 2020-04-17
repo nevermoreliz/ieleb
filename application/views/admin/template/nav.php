@@ -28,23 +28,23 @@
                  <i class="nav-icon fas fa-th"></i>
                  <p>
                    Inicio
-                   
+
                  </p>
                </a>
              </li>
         <li class="nav-item has-treeview ">
           <a href="#" class="nav-link ">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
+            <i class="nav-icon fas fa-home"></i>
             <p>
-              Miembros
+              IGLESIAS
               <i class="right fas fa-angle-left"></i>
             </p>
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="<?php echo base_url('admin/post_save') ?>" class="nav-link ">
+              <a href="<?php echo base_url('admin/iglesia_create') ?>" class="nav-link ">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Insertar</p>
+                <p>Crear</p>
               </a>
             </li>
             <li class="nav-item">
