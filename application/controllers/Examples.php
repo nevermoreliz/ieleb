@@ -194,7 +194,7 @@ class Examples extends MY_Controller
 		$user_data = [
 			'username'   => 'admin',
 			'passwd'     => 'PepeLePew7',
-			'email'      => 'admin@gmail.com',
+			'email'      => 'admin@blogigniter.com',
 			'auth_level' => '9', // 9 if you want to login @ examples/index.
 		];
 
