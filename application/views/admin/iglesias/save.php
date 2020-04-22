@@ -9,8 +9,8 @@
           <h3 class="card-title">Llenar el Formulario</h3>
         </div>
         <!-- /.card-header -->
-        <!-- form start -->
-        <form role="form" id="Form_save_iglesia" action="<?php echo base_url('admin/iglesia_create') ?>" method="POST" accept-charset="utf-8">
+        <!-- form start  id="Form_save_iglesia" -->
+        <form role="form"  id="Form_save_iglesia"  action="<?php echo base_url('admin/iglesia_create') ?>" method="POST" accept-charset="utf-8">
           <div class="card-body">
               <div class="form-group">
                 <label >Nombre de la Iglesia</label>
@@ -19,8 +19,8 @@
               <div class="form-group">
                         <label>Estado</label>
                         <select class="form-control" name="estado" id="estado">
-                          <option value="">Activo</option>
-                          <option value="">Desactivado</option>
+                          <option value="Activo">Activo</option>
+                          <option value="Desactivado">Desactivado</option>
                         </select>
               </div>
           </div>

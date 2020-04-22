@@ -1,7 +1,9 @@
 $(document).ready(function() {
     $.validator.setDefaults({
         submitHandler: function() {
-            alert("Form successful submitted!");
+            
+            alert('ya esta');
+            form.submit();
         }
     });
     $('#Form_save_iglesia').validate({

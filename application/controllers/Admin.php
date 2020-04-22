@@ -6,10 +6,15 @@ class Admin extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+
 		$this->load->library("parser");
 		$this->load->library("Form_validation");
 
 		$this->load->database();
+
+		
+
+		
 	}
 
 	public function index()
@@ -48,7 +53,7 @@ class Admin extends CI_Controller {
 				);
 				$id_iglesia = $this->Iglesia_model->insert($save);
 			}else {
-				// echo validation_errors();
+				 echo validation_errors();
 			}
 		}
 
